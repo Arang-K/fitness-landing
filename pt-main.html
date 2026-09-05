@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1:1 PT 메인페이지</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeUp 0.9s ease forwards;
+  }
+
+  .fade-up-delay-1 {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeUp 0.9s ease forwards;
+    animation-delay: 0.15s;
+  }
+
+  .fade-up-delay-2 {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeUp 0.9s ease forwards;
+    animation-delay: 0.3s;
+  }
+
+  .fade-up-delay-3 {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeUp 0.9s ease forwards;
+    animation-delay: 0.45s;
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+</head>
+<body class="text-white">
+
+  <section class="relative min-h-screen overflow-hidden">
+    <!-- 배경 이미지 -->
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80"
+        alt="PT 메인 배경"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+
+    <!-- 텍스트 -->
+    <div class="relative z-10 max-w-7xl mx-auto px-8 pt-32 py-20 md:px-12 md:pt-40 md:pb-24">
+      <p class="fade-up text-red-400 font-semibold text-sm md:text-base uppercase tracking-[0.25em]">
+        1:1 Personal Training
+      </p>
+
+      <h1 class="fade-up-delay-1 mt-6 text-4xl md:text-7xl font-black leading-[1.02] tracking-tight max-w-3xl">
+        지금 시작하면<br />
+        몸이 달라집니다
+      </h1>
+
+      <p class="fade-up-delay-2 mt-10 max-w-4xl text-xl md:text-3xl leading-relaxed text-white/80 font-medium">
+        혼자서 운동하다 포기했다면, 이제 전문가와 함께 시작하세요.
+      </p>
+
+      <div class="fade-up-delay-3 mt-14 flex flex-wrap gap-5">
+        <a
+          href="https://open.kakao.com/o/shVSG8oi"
+          target="_blank"
+          class="rounded-[1.4rem] bg-red-500 px-8 py-4 text-xl md:text-xl font-bold text-white shadow-lg transition hover:opacity-90"
+        >
+          무료 상담 신청
+        </a>
+
+        <a
+          href="pt-detail.html"
+          class="rounded-[1.4rem] border border-white/30 bg-white/10 px-8 py-4 text-xl md:text-xl font-bold text-white backdrop-blur-sm transition hover:bg-white/20"
+        >
+          상세페이지 보기
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
